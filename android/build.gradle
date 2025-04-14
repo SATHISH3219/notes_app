@@ -1,0 +1,34 @@
+// ✅ Add this buildscript block for Firebase and other plugins
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.3'           // Replace with your Gradle plugin version
+        classpath 'com.google.gms:google-services:4.3.15'          // Firebase plugin
+    }
+}
+
+// ✅ Already present, kept as-is
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// ✅ Keep as-is
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
