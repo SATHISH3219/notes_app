@@ -20,7 +20,10 @@ A clean and minimal note-taking Flutter app with search functionality, markdown 
 
 | Home Screen | Editor Screen | Search |
 |-------------|---------------|--------|
-| (Insert here) | (Insert here) | (Insert here) |
+|  (https://github.com/user-attachments/assets/9ae277ff-1cac-4808-83ef-7c4da8d4c135)
+| (https://github.com/user-attachments/assets/1ea56f62-13e4-4c43-b89e-1adf0e2e78e1)
+ | (https://github.com/user-attachments/assets/7b425f31-86bf-4701-82da-435e31d5c86f)
+ |
 
 ---
 
